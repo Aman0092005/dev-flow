@@ -5,10 +5,15 @@
 // import './App.css'
 
 
-import {useState} from "react";
+import {useState, useEffect} from "react";
+import {Route, Routes, useNavigate} from "react-router-dom";
+
 import Login from "./pages/Login.tsx"
+import Home from "./pages/Home.tsx";
 
 import {login} from "./utils/auth.ts";
+
+import Protectedroute from "./components/Protectedroute.tsx";
 
 
 
@@ -18,24 +23,46 @@ function App()
 {
 
   const[isLoginErr, setisLoginErr] = useState({err: false, msg:""});
+  const[isLogined, setIsLogined] = useState(false);
+
+  const navigate = useNavigate();
+
+ 
 
 
   async function handleLogin(firstName: string, lastName: string, email: string, password: string, isLogin: boolean)
   {
     const result = await login(firstName, lastName, email, password, isLogin);
-    console.log(result.err, result.msg);
     if(result.err){
       setisLoginErr({err: result.err, msg: result.msg});
     }else{
-      console.log(result.user);
+      sessionStorage.setItem("token", result.token);
+      setIsLogined(true);
+      // temporary
+      const t = sessionStorage.getItem("token");
+      await fetch("http://localhost:3000/data", {
+        method: "GET",
+        headers: {
+          Authorization: `Bearer ${t}`
+        }
+      });
+  
+      homeHandle();
     }
   }
 
+  function homeHandle()
+  {
+    navigate("/home");
+  }
 
 
   return (
     <div>
-      <Login handleLogin={handleLogin} isLoginErr={isLoginErr} />
+      <Routes>
+        <Route path="/" element={<Login handleLogin={handleLogin} isLoginErr={isLoginErr} />} />
+        <Route path="/home" element={<Protectedroute> <Home /> </Protectedroute>} />
+      </Routes>
     </div>
   );
 }
