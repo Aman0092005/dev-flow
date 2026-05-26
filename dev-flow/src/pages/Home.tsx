@@ -1,6 +1,8 @@
 
+import Navbar from "./../components/home/Navbar.tsx";
+import Hero from "./../components/home/Hero.tsx";
 
-
+import "./../styles/home.css";
 
 
 
@@ -12,7 +14,10 @@
 function Home()
 {
     return (
-        <h1 style={{color: "blue"}}>Welcome...</h1>
+        <div className="home-container">
+            <Navbar/>
+            <Hero />
+        </div>
     );
 }
 

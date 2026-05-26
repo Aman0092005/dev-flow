@@ -38,15 +38,6 @@ function App()
     }else{
       sessionStorage.setItem("token", result.token);
       setIsLogined(true);
-      // temporary
-      const t = sessionStorage.getItem("token");
-      await fetch("http://localhost:3000/data", {
-        method: "GET",
-        headers: {
-          Authorization: `Bearer ${t}`
-        }
-      });
-  
       homeHandle();
     }
   }
