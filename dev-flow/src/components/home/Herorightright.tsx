@@ -1,7 +1,6 @@
 import Herorightrighttop from "./Herorightrighttop";
-
-
-
+import Herorightovleft from "./Herorightovleft.tsx";
+import Herorightrightright from "./Herorightrightright.tsx";
 
 
 
@@ -14,8 +13,8 @@ function Herorightright()
             <Herorightrighttop />
             <div className="right-subheading"><h2>Overview</h2></div>
             <div className="home-hero-right-right-ov-container">
-                <div><h1>kdsjfsj</h1></div>
-                <div><h1>dnfcjdscj</h1></div>
+                <Herorightovleft />
+                <Herorightrightright />
             </div>
         </div>
     );
