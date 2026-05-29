@@ -12,7 +12,8 @@ function Herorightleft()
                 <div className="home-hero-right-left-img-container">
                     <img src="./img/home/nav-logo.png" alt="Devflow logo" />
                 </div>
-                <p>{">"}</p>
+                {/* <p>{">"}</p> */}
+                <div style={{height: "1.2rem"}}><img src="./img/home/up-square.png" style={{height: "100%", rotate:"180deg"}} alt="Logo image" /></div>
             </div>
             <div className="home-hero-right-left-middle-container">
                 <Buttonrightleft title="Overview" src="./img/home/home.png" />

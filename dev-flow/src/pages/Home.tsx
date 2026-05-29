@@ -17,6 +17,10 @@ function Home()
         <div className="home-container">
             <Navbar/>
             <Hero />
+            <div className="home-after-hero-heading">
+                <p>POWERFUL FEATURES</p>
+                <h2>Everything you need to stay productive</h2>
+            </div>
         </div>
     );
 }

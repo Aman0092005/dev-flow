@@ -28,13 +28,13 @@ function Herorightrightright() {
     return (
         <div className="home-hero-r-r-ov-l-m-container p-r-1">
             <div className="d-f">
-                <Overviewcard />
-                <Overviewcard />
+                <Overviewcard title="in Progress" total={12} src="progress.png" />
+                <Overviewcard title="Completed" total={62} src="complete.png" />
             </div>
             <div className="m-c">
-                <div className="m-t"><p className="p1">Task Overview</p><p className="p2">View all</p></div>
+                <div className="m-t"><p className="p1">Task Overview</p></div>
                 <div className="m-t-progress">
-                    <div style={{ textAlign: "center", margin: "auto 10%" }}>
+                    <div style={{ textAlign: "center", margin: "auto 5%" }}>
                         <PieChart width={125} height={120}>
                             <Tooltip />
 
@@ -70,8 +70,8 @@ function Herorightrightright() {
             </div>
             <div className="m-d">
                 <div className="m-t"><p className="p1">Activity</p><p className="p2">View all</p></div>
-                <Recentprojectcard title="API Integration" progress="Pending" isTime={false} />
-                <Recentprojectcard title="Database Integration" progress="Done" isTime={false} />
+                <Recentprojectcard title="Authentication Done" progress="just now" isTime={false} src="authentication.png" colors="pl2" />
+                <Recentprojectcard title="Rate Limiting" progress="2hr ago" isTime={false} src="rate-limiting.png" colors="bl2" />
             </div>
         </div>
     );

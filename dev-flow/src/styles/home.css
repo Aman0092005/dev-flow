@@ -21,8 +21,34 @@
     padding-right: 1rem;
 }
 
+.bl1{
+    color: #394790;
+    background-color: #1B233D;
+    font-weight: 700;
+}
+.gn1{
+    color: #2A7254;
+    background-color: #182E36;
+    font-weight: 700;
+}
+.pl1{
+    color: #472F74;
+    background-color: #21233F;
+    font-weight: 700;
+}
 
-
+.bl2{
+    color: #394790;
+    font-weight: 700;
+}
+.gn2{
+    color: #2A7254;
+    font-weight: 700;
+}
+.pl2{
+    color: #472F74;
+    font-weight: 700;
+}
 
 
 
@@ -329,7 +355,7 @@
 }
 .home-hero-right-left-down-container .wd-container .dev{
     font-family: "Roboto", sans-serif;
-    font-size: 1.1rem;
+    /* font-size: 1.1rem; */
     color: #ffffffd2;
 }
 .home-hero-right-left-down-container .tt{
@@ -418,7 +444,7 @@
 
 .home-hero-r-r-ov-l-m-container{
     display: grid;
-    grid-template-rows: 5.6rem 18rem 0.25fr;
+    grid-template-rows: 5.6rem 24rem 0.25fr;
     row-gap: 2.6rem;
     padding-left: 1rem;
     /* background-color: #8663ED; */
@@ -489,6 +515,8 @@
     font-size: 0.9rem;
     font-weight: 400;
     letter-spacing: 0.1px;
+    color: #4D4C78;
+    font-weight: 7003;
 }
 
 
@@ -498,7 +526,7 @@
     align-items: center;
     justify-content: space-between;
     border-top: 1px solid #ffffff21;
-    padding: 0.8rem 1rem;
+    padding: 1rem 1rem;
 }
 
 .r-c-img-title-container{
@@ -510,7 +538,7 @@
     font-size: 0.9rem;
 }
 .r-c-img-title-container .r-c-img{
-    height: 1.4rem;
+    height: 2rem;
 }
 .r-c-img-title-container .r-c-img img{
     height: 100%;
@@ -521,11 +549,19 @@
     flex-direction: column;
     gap: 0.2rem;
 }
+.home-hero-recent-container .p1{
+    font-size: 1.1rem;
+    color: #ffffffa1;
+}
 .home-hero-recent-container .p2{
-    font-size: 0.8rem;
+    font-size: 1rem;
+    /* color: #ffffff7e; */
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.5rem;
 }
 .home-hero-recent-container .p3{
-    font-size: 0.6rem;
+    font-size: 0.8rem;
+    color: #ffffff67;
 }
 
 
@@ -542,6 +578,7 @@
 .m-t-progress{
     display: flex;
     align-items: center;
+    margin-top: 4.6rem;
 }
 .m-t-progress .m-t-progress-inner{
     display: flex;
@@ -566,4 +603,26 @@
     width: 1rem;
     /* background-color: #8663ED; */
     border-radius: 50%;
+}
+
+
+
+
+/* After hero */
+.home-after-hero-heading{
+    margin-top: 3.2rem;
+}
+.home-after-hero-heading p{
+    text-align: center;
+    color: #8663ED;
+    font-size: 1.6rem;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+.home-after-hero-heading h2{
+    text-align: center;
+    margin-top: 1.6rem;
+    font-size: 3.2rem;
+    letter-spacing: 0.5px;
+    font-weight: 600;
 }

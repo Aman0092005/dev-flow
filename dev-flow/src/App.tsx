@@ -5,7 +5,7 @@
 // import './App.css'
 
 
-import {useState, useEffect} from "react";
+import {useState} from "react";
 import {Route, Routes, useNavigate} from "react-router-dom";
 
 import Login from "./pages/Login.tsx"
@@ -23,7 +23,7 @@ function App()
 {
 
   const[isLoginErr, setisLoginErr] = useState({err: false, msg:""});
-  const[isLogined, setIsLogined] = useState(false);
+  // const[isLogined, setIsLogined] = useState(false);
 
   const navigate = useNavigate();
 
@@ -37,7 +37,7 @@ function App()
       setisLoginErr({err: result.err, msg: result.msg});
     }else{
       sessionStorage.setItem("token", result.token);
-      setIsLogined(true);
+      // setIsLogined(true);
       homeHandle();
     }
   }
