@@ -35,7 +35,7 @@ function Herorightrightright() {
                 <div className="m-t"><p className="p1">Task Overview</p></div>
                 <div className="m-t-progress">
                     <div style={{ textAlign: "center", margin: "auto 5%" }}>
-                        <PieChart width={125} height={120}>
+                        <PieChart width={125} height={120} className="pie-chart">
                             <Tooltip />
 
                             <Pie
