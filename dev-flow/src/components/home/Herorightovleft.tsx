@@ -8,7 +8,7 @@ import Recentprojectcard from "./Recentprojectcard.tsx";
 function Herorightovleft()
 {
     return (
-        <div className="home-hero-r-r-ov-l-m-container">
+        <div className="home-hero-r-r-ov-l-m-container hide-very-sm-screen">
             <div className="d-f">
                 <Overviewcard title="Total Projects" total={12} src="folder.png" />
                 <Overviewcard title="Tasks" total={86} src="tasks.png" />
