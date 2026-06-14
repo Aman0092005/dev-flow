@@ -94,7 +94,7 @@ app.get("/data", jwtMiddleware, (req: AuthRequest, res: Response) => {
 });
 
 
-server.listen(PORT, () => {
+server.listen(PORT, '0.0.0.0' ,() => {
     console.log("Server is listening at port", PORT);
 });
 

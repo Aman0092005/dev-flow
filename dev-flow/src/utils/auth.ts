@@ -28,7 +28,7 @@ export async function login(firstName: string, lastName: string, email: string, 
       data.lastName = lastName;
       endPoint = "signin"
     }
-    const result = await fetch(`http://localhost:3000/${endPoint}`, {
+    const result = await fetch(`http://172.20.10.7:3000/${endPoint}`, {
       method: "POST",
       headers: {
         'Content-Type': 'application/json'
