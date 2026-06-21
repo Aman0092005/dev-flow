@@ -10,6 +10,7 @@ import {Route, Routes, useNavigate} from "react-router-dom";
 
 import Login from "./pages/Login.tsx"
 import Home from "./pages/Home.tsx";
+import Dashboard from "./pages/Dashboard.tsx";
 
 import {login} from "./utils/auth.ts";
 
@@ -53,6 +54,7 @@ function App()
       <Routes>
         <Route path="/" element={<Login handleLogin={handleLogin} isLoginErr={isLoginErr} />} />
         <Route path="/home" element={<Protectedroute> <Home /> </Protectedroute>} />
+        <Route path="/dashboard" element={<Protectedroute> <Dashboard /> </Protectedroute>} />
       </Routes>
     </div>
   );

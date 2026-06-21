@@ -1,0 +1,113 @@
+
+/* SHARED START */
+
+/* main logo */
+.main-logo{
+    height: 3.2rem;
+}
+.main-logo img{
+    height: 100%
+}
+
+/* service button */
+.servicebutton-container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: #2A215C;
+    padding: 0.8rem;
+    border-radius: 0.6rem;
+}
+.servicebutton-container .logo{
+    height: 2.2rem;
+}
+.servicebutton-container .logo img{
+    height: 100%;
+}
+.servicebutton-container .para{
+    font-family: "Roboto", sans-serif;
+    font-size: 1.4rem;
+    color: #ffffffd3;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* upgrade */
+.upgrade-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    background-color: #231F4B;
+    padding: 1.6rem;
+    border-radius: 0.6rem;
+}
+.upgrade-container .logo{
+    height: 2.8rem;
+}
+.upgrade-container .logo img{
+    height: 100%;
+}
+.upgrade-container .p1{
+    font-family: "Roboto", sans-serif;
+    color: #937DD0;
+    font-size: 1.6rem;
+}
+.upgrade-container .p2{
+    font-family: "Roboto", sans-serif;
+    color: #ffffffb7;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+.upgrade-container button{
+    background-color: #613ADC;
+    border: 1px solid #613ADC;
+    padding: 0.4rem 0.6rem;
+    border-radius: 0.5rem;
+    color: #ffffffb6;
+    font-weight: 600;
+}
+
+/* SHARED END */
+
+
+
+
+/* utility start */
+
+.background-transparent{
+    background: transparent;
+}
+
+/* utility end */
+
+
+
+
+.dashboard-section{
+    min-height: 100vh;
+    background-color: #0F1524;
+    display: grid;
+    grid-template-columns: 0.15fr 0.85fr;
+}
+
+.dashboard-left{
+    border-right: 1px solid #ffffff9a;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+.dashboard-left, .dashboard-right{
+    padding: 1.6rem;
+}
+
+
+.dashboard-left .main{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.dashboard-left .main h3{
+    color: #ffffff70;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
