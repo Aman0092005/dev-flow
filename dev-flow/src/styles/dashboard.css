@@ -67,6 +67,43 @@
     font-weight: 600;
 }
 
+
+/* logo */
+.shared-logo img{
+    height: 100%;
+}
+
+
+/* navbar */
+.shared-navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.shared-navbar-container .inner-inp{
+    width: 30%;
+}
+.shared-navbar-container .inner-inp input{
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: 0.6rem;
+}
+.shared-navbar-container .inner{
+    display: flex;
+    gap: 5.6rem;
+    align-items: center;
+}
+
+
+/* profile */
+.shared-profile-container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
 /* SHARED END */
 
 
@@ -90,13 +127,15 @@
     grid-template-columns: 0.15fr 0.85fr;
 }
 
+
+/* dashboard left */
 .dashboard-left{
     border-right: 1px solid #ffffff9a;
     display: flex;
     flex-direction: column;
     gap: 2.4rem;
 }
-.dashboard-left, .dashboard-right{
+.dashboard-left{
     padding: 1.6rem;
 }
 
@@ -110,4 +149,10 @@
     color: #ffffff70;
     letter-spacing: 0.5px;
     font-weight: 500;
+}
+
+
+/* dashboard right */
+.dashboard-right{
+    padding: 1.6rem;
 }
